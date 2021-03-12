@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestBrain - Neural Networks with Machine Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top ">  
+    <img class="navbar-brand" id="logo" src="https://firebasestorage.googleapis.com/v0/b/cloud-firestore-nagapillaiyar.appspot.com/o/BestBrainLogo.jpg?alt=media&token=145d91f5-1951-42fe-92ba-c41581ed427c">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">     <ul class="navbar-nav mr-4">
+      <li class="nav-item">
+        <a class="nav-link" data-value="about" href="about.html">About Us</a>        </li>  
+      <li class="nav-item">
+        <a class="nav-link " data-value="products" href="https://codeprojects.org/u8lsg7kv3SB1gJZ03nMsBUdU0epsUF6RFTs-kSPwtOs/">Products</a>    
+      </li>
+      <li class="nav-item"> 
+        <a class="nav-link " data-value="willchat" href="willchat.html">WillChat</a>         </li>   
+      <li class="nav-item">  
+        <a class="nav-link " data-value="bestmachine" href="bestmachine.html">         BestMachine</a>       </li>  
+      <li class="nav-item"> 
+        <a class="nav-link " data-value="taidukul" href="taidukul.html">Taidukul</a>       </li> 
+      <li class="nav-item"> 
+        <a class="nav-link " data-value="taidukul" href="blog.html">Blog</a>       </li>
+      <li class="nav-item"> 
+        <a class="nav-link " data-value="taidukul" href="https://codeprojects.org/RoFH_tVRFtjSTb-3sGJOdC_k8mBjgTThFEKRg7r2CpY">BestDeveloper</a>       </li>
+      <li class="nav-item"> 
+        <a class="nav-link " data-value="taidukul" href="contact.html">Contact</a>       </li> 
+      </ul> 
+    </div></nav>
+    <br><br><br><br><br><br>
+    <div class="container">
+      <div class="header">
+        <div class="overlay">
+          <div class="description">
+      <figure>
+      <img src="https://firebasestorage.googleapis.com/v0/b/cloud-firestore-nagapillaiyar.appspot.com/o/BestBrainLogo.jpg?alt=media&token=145d91f5-1951-42fe-92ba-c41581ed427c" id="logoCon" class="media-left">
+      </figure>
+      <h1 id="head">BestBrain - Neural Networks with Machine Learning using JavaScript</h1>
+      <p id="head">Simple, fast and easy to use.</p>
+      <p id="head"><span id="hidden">.............................................</span><a href="#start" class="btn btn-light">Get Started!</a></p>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+      <div id="start">
+      <h1>Get Started - Installation</h1>
+      <h4>There are multiple ways to use this library:</h4>
+      <p>1. CDN</p>
+      <p><code>https://firebasestorage.googleapis.com/v0/b/cloud-firestore-nagapillaiyar.appspot.com/o/bestbrain.js?alt=media&token=edf3d749-9aa6-40ae-a160-d0cd354f39c9</code></p>
+      <p>2. Source code on GitHub</p>
+      <a href="https://github.com/BestMat/BestBrain.js" class="btn btn-primary">Source code on GitHub</a>
+      <p>3. Download it directly</p>
+      <a href="https://firebasestorage.googleapis.com/v0/b/cloud-firestore-nagapillaiyar.appspot.com/o/bestbrain.js?alt=media&token=edf3d749-9aa6-40ae-a160-d0cd354f39c9" class="btn btn-primary" download>Click here to install</a>
+    </div>
+    <br>
+    <div id="examples">
+      <h1>Examples</h1>
+     <p>1. XOR Example</p>
+     <code><textarea cols="50" rows="5" readonly>
+      const net = new brain.NeuralNetwork({hiddenLayers:[3]});
+
+      const trainingData = [
+        { input: [0, 0], output: [1] },
+        { input: [0, 1], output: [1] },
+        { input: [1, 0], output: [1] },
+        { input: [1, 1], output: [0] }
+      ];
+      
+      net.train(trainingData);
+      
+      print(net.run([0, 0]));
+
+     </textarea></code>
+
+     <p>2. Chunk the Array</p>
+     <code><textarea cols="50" rows="5" readonly>
+      print(chunk([1, 2, 3, 4, 5], 2))
+      // list: list[0] = 1,2
+      // list[0] = 2,3
+     </textarea></code>
+
+
+     <p>3. Chunk the Array - Add All</p>
+     <code><textarea cols="50" rows="5" readonly>
+      const b = chunk([1, 2, 3, 4, 5], 2)[0]+chunk([1, 2, 3, 4, 5], 2)[1]+chunk([1, 2, 3, 4, 5], 2)[2]
+      print(b)
+      // 1,23,45
+     </textarea></code>
+
+     <p>4. What is the data type?</p>
+     <code><textarea cols="50" rows="5" readonly>
+      const c = "hello world"
+      print(type(c))
+      // Returns "string"
+     </textarea></code>
+
+     <p>5. Provides optional config object, defaults shown.</p>
+     <code><textarea cols="50" rows="5" readonly>
+const config = {
+  inputSize: 20,
+  inputRange: 20,
+  hiddenLayers: [20, 20],
+  outputSize: 20,
+  learningRate: 0.01,
+  decayRate: 0.999,
+};
+
+const net = new brain.recurrent.RNN(config);
+
+net.train([
+  { input: [0, 0], output: [0] },
+  { input: [0, 1], output: [1] },
+  { input: [1, 0], output: [1] },
+  { input: [1, 1], output: [0] },
+]);
+
+const output = net.run([0, 0]); // [0]
+output = net.run([0, 1]); // [1]
+output = net.run([1, 0]); // [1]
+output = net.run([1, 1]); // [0]
+     </textarea></code>
+
+
+
+
+
+     <p>6. REST API - Get</p>
+     <code><textarea cols="50" rows="5" readonly>
+      const url = "resturl"
+      print(restGet(url))
+     </textarea></code>
+
+
+
+     <p>7. REST API - Post</p>
+     <code><textarea cols="50" rows="5" readonly>
+      const url = "resturl"
+      const post = restPost() (a) =>{
+        a.post(url)
+      }
+     </textarea></code>
+    </div>
+
+
+
+    <br><br><br><br><br><br><br><br>
+
+
+    <div class="footer">
+      <center>
+        <br>
+
+      <h5 class="text-light">© 2021 - BestBrain.js - BestMat</h5>
+      <p class="text-light">All Rights Reserved!</p>
+
+      <br>
+
+      <p class="text-light">Follow us on:</p>
+
+      <a href="https://twitter.com/bestmat3" class="btn-light btn">Twitter</a>
+
+      <br>
+
+      <span id="hidden">.................................</span>
+
+    </center>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+   
+</body>
+</html>
