@@ -24829,7 +24829,7 @@ function sumArray(a, b) {
 //var be4 = a[0] + a[1]
 
 
-const chunk = (arr, size) =>
+const chunkArray = (arr, size) =>
 Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
   arr.slice(i * size, i * size + size)
 );
