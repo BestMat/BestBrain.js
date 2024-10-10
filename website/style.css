@@ -13,6 +13,7 @@
 .navbar-collapse{
   justify-content: flex-end;
 }
+
 .bg-dark{
   background-color:#343a40!important
 }
@@ -24,10 +25,12 @@
   width: 150px;
   height: 100px;
 }
+
 ::selection{
   background: #333; 
   color:white; 
 }
+
 #logoCon{
     width: 15%;
     overflow: auto;
@@ -37,14 +40,17 @@
     float: left;
     margin-right: 10px;
   }
+
 #head{
     color: white;
 }
+
 .header{
   background-image: url('https://raw.githubusercontent.com/hayanisaid/bootstrap4-website/master/images/headerback.jpg');
   background-size: cover;
   background-position: center;
 }
+
 .overlay{
   position: absolute;
   min-height: 100%;
@@ -53,6 +59,7 @@
   top: 0;
   background: #007bff;
 }
+
 .description{
   position: absolute;
   top: 30%;
@@ -60,15 +67,18 @@
   padding: 2em;
 
 }
+
 .description h1{
   color:#007bff ;
 }
+
 .description p{
   color:#666;
   font-size: 20px;
   width: 50%;
   line-height: 1.5;
 }
+
 #hidden{
   visibility: hidden;
 }
